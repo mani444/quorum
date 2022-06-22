@@ -45,7 +45,7 @@ export const allRoutes: IRoutes[] = [
   },
   {
     path: LOGIN_ROUTE,
-    component: Login,
+    component: Home,
     exact: true,
     isPrivate: false,
   },
