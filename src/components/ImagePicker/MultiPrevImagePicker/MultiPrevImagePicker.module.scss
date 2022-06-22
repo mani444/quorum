@@ -1,0 +1,48 @@
+@import "../../../colors.scss";
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  // width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;
+}
+
+.carousel {
+  width: 150px !important;
+}
+
+.uploadedPhoto {
+  width: 150px !important;
+  height: 150px;
+  object-fit: contain;
+  margin-right: 10px;
+  border: 2px solid $jumbo;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.addMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid $dodger-blue;
+  border-radius: 10px;
+  color: $dodger-blue;
+  font-size: 2em;
+  font-weight: 500;
+  background-color: $periwinkle-gray;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.inputButton {
+  display: none;
+}
+
+.error {
+  color: $red;
+  font-size: 12px;
+  font-weight: bold;
+}

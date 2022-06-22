@@ -1,0 +1,38 @@
+@import "../../colors.scss";
+
+.cameraContainer {
+  width: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.webCam {
+  width: 100%;
+  height: 100vh !important;
+  object-fit: fill;
+}
+.cameraContent {
+  position: absolute;
+  width: 470px;
+  display: flex;
+  bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.takePicture {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  bottom: 0px;
+  background-color: aliceblue;
+  padding: 5px;
+  border-radius: 10px;
+  user-select: none;
+}
+@media only screen and (max-width: 768px) {
+  .cameraContainer {
+    width: 100%;
+  }
+}

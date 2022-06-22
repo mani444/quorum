@@ -1,0 +1,33 @@
+@import "../../colors.scss";
+
+.profileIcon {
+  background-color: $white;
+  width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.profileHeader {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.divider {
+  width: 100%;
+  margin: 5px 0px;
+  border-bottom: 1px solid $alto;
+}
+.searchInputWrapper {
+  width: 100%;
+  display: flex;
+  border: 20px solid $wild-sand;
+  background-color: $wild-sand;
+}
+
+@media only screen and (max-width: 768px) {
+  .profileIcon {
+    width: 100%;
+  }
+}

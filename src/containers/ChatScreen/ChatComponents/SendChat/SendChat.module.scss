@@ -1,0 +1,14 @@
+@import "../../../../colors.scss";
+
+.container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.inputWrapper {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,15 @@
+@import "../../../../colors.scss";
+
+.topBarContainer {
+  width: 100%;
+  border-bottom: 2px solid $alto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+.title {
+  color: $dodger-blue;
+  font-weight: 700;
+  font-size: 1.2em;
+}

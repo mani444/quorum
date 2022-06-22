@@ -1,0 +1,92 @@
+@import "../../../../colors.scss";
+.chatsContainer {
+  height: calc((100vh - 30%) - 70px);
+  max-height: calc((100vh - 30%) - 70px);
+  background-color: $scorpion;
+  width: 100%;
+  overflow-y: auto;
+  padding: 8px 15px;
+  &::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+  display: flex;
+  flex-direction: column;
+}
+.scrollToBottom {
+  background-color: $white;
+  position: absolute;
+  z-index: 10;
+  right: 0px;
+  bottom: 80px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  cursor: pointer;
+}
+.scrollToBottomIcon {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}
+.messageBox {
+  position: relative;
+  background-color: $white;
+  width: fit-content;
+  padding: 2px 8px 5px 8px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  max-width: 70%;
+}
+.leftIcon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 9px solid;
+  border-color: $white transparent transparent transparent;
+  left: -9px;
+  bottom: -1px;
+}
+
+.rightIcon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 9px solid;
+  border-color: $turquoise transparent transparent transparent;
+  right: -9px;
+  bottom: -1px;
+}
+.userName {
+  color: $dodger-blue;
+  font-weight: 700;
+  font-size: 1em;
+}
+.message {
+  font-weight: 500;
+  font-size: 0.9em;
+  text-align: left;
+}
+.rightChat {
+  background-color: $turquoise;
+  align-self: flex-end;
+  float: right;
+}
+.leftChat {
+  float: left;
+}
+.chatImage {
+  align-self: center;
+  object-fit: contain;
+  border-radius: 10px;
+  max-width: 100%;
+}

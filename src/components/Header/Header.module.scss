@@ -1,0 +1,33 @@
+@import "../../colors.scss";
+.headerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.profileSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileIcon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+.title {
+  color: $scorpion;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+.settingSection {
+  display: flex;
+}
+.settingIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}

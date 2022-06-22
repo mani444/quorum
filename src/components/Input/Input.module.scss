@@ -1,0 +1,15 @@
+@import "../../colors.scss";
+
+.leftIcon {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  margin-right: 5px;
+}
+
+.rightIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-left: 5px;
+}

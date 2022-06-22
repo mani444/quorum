@@ -1,0 +1,35 @@
+@import "../../colors.scss";
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.inputButton {
+  display: none;
+}
+.photo-upload {
+  width: 70px;
+  height: 70px;
+  border: 2px solid $jumbo;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $dodger-blue;
+  font-weight: 700;
+}
+.addIcon {
+  width: 70px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error {
+  color: $red;
+  font-size: 0.7em;
+  font-weight: bold;
+}

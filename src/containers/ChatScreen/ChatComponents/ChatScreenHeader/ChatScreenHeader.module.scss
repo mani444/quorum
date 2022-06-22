@@ -1,0 +1,87 @@
+@import "../../../../colors.scss";
+
+.chatHead {
+  height: calc(100vh - 70%);
+  width: 100%;
+  display: flex;
+  font-size: 16px;
+}
+.groupBackgroundImage {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-bottom: 15px solid $dodger-blue;
+}
+.headerContent {
+  position: absolute;
+  height: calc(100vh - 70%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.headerTopBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 8px;
+}
+.headerProfileSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backIcon {
+  height: 30px;
+  width: 30px;
+  object-fit: contain;
+  cursor: pointer;
+}
+.profileIcon {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.settingsIcon {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  cursor: pointer;
+}
+.groupDetailsCard {
+  background-color: $periwinkle-gray;
+  border: 2px solid $dodger-blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 5px;
+  width: fit-content;
+  max-width: 300px;
+  padding: 1px 5px;
+}
+.detailCardName {
+  color: $st-tropaz;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.detailCardDescription {
+  color: $kashmir-blue;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.detailCardNameSmall {
+  color: $st-tropaz;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+.detailCardDescriptionSmall {
+  color: $kashmir-blue;
+  font-weight: 500;
+  font-size: 0.65em;
+}

@@ -1,0 +1,112 @@
+@import "../../../../colors.scss";
+
+.categoryBarContainer {
+  background-color: $scorpion;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 2.5px;
+  margin-top: 10px;
+}
+.createIconContainer {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.createIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.textStyles {
+  font-weight: bold;
+  font-size: 1.9em;
+  color: $white;
+  cursor: pointer;
+}
+.feedLabel {
+  @extend .textStyles;
+  width: 20%;
+}
+.liveLabel {
+  @extend .textStyles;
+  width: 20%;
+}
+.label {
+  @extend .textStyles;
+  width: 35%;
+}
+.activeTab {
+  color: $dodger-blue;
+  text-shadow: 3px 3px 1px rgba(255, 255, 255, 0.6);
+}
+.moreButton {
+  width: 10%;
+  margin-left: 10px;
+  @extend .textStyles;
+  position: relative;
+}
+
+.moreDots {
+  display: flex;
+  flex-direction: column;
+}
+
+.moreModal {
+  background-color: $white;
+  width: 300px;
+  border-radius: 10px;
+  color: $thunder;
+}
+
+.categoryListContainer {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 500;
+}
+.closeIcon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  cursor: pointer;
+  align-self: flex-end;
+}
+.singleCategoryWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  max-height: 400px;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+}
+.singleCategory {
+  display: flex;
+  width: 100%;
+  font-size: 0.7em;
+  font-weight: 700;
+  padding: 8px 0px;
+  border-bottom: 1px solid $jumbo;
+}
+@media only screen and (max-width: 480px) {
+  .categoryBarContainer {
+    font-size: 14px;
+  }
+  .createIcon {
+    width: 30px;
+    height: 30px;
+  }
+}
